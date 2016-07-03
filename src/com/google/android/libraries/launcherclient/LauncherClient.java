@@ -346,12 +346,12 @@ public class LauncherClient {
             }
 
             switch (msg.what) {
-                case 0:
+                case 2:
                     if ((mClient.mServiceStatus & 1) != 0) {
                         mClient.mLauncherClientCallbacks.onOverlayScrollChanged((float) msg.obj);
                     }
                     return true;
-                case 1:
+                case 3:
                     WindowManager.LayoutParams attrs = mWindow.getAttributes();
                     if ((boolean) msg.obj) {
                         attrs.x = mWindowShift;
@@ -359,7 +359,7 @@ public class LauncherClient {
                     }
                     mWindowManager.updateViewLayout(mWindow.getDecorView(), attrs);
                     return true;
-                case 2:
+                case 4:
                     mClient.notifyStatusChanged(msg.arg1);
                     return true;
                 default:
