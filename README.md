@@ -3,6 +3,12 @@ Sony was the first developer to introduce a native Google Now integration into t
 
 If you are a Google employee and want this project removed, please contact me on my personal e-mail.
 
+# Limitations
+It is currently only possible to use this library if the app is installed as a system application or if the Google Search app has debugging set to true. Neither of these requirements can be full-filled without read/write access to `/system`.
+
+# Usage
+Please see the included example for example usage. You must install the example application as a system application by moving the built apk to `/system/app/`.
+
 # Decompiling
 I prefer decompiling Android applications using apktool (http://ibotpeaches.github.io/Apktool/). The program is really simple to use and enables the user to see the code represented as [smali](https://github.com/JesusFreke/smali).
 
@@ -19,3 +25,6 @@ apktool d home.apk
 
 ### 3) Find the source
 The source files are located in `smali/com/google/android/libraries/launcherclient/`.
+
+# License
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
