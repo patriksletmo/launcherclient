@@ -3,6 +3,9 @@ Sony was the first developer to introduce a native Google Now integration into t
 
 If you are a Google employee and want this project removed, please contact me on my personal e-mail.
 
+# Demonstration
+[![Demo](https://thumbs.gfycat.com/CrazyDishonestDarklingbeetle-size_restricted.gif)](https://gfycat.com/FarawayConsiderateChinchilla)
+
 # Limitations
 It is currently only possible to use this library if the app is installed as a system application or if the Google Search app has debugging set to true. Neither of these requirements can be full-filled without read/write access to `/system`.
 
