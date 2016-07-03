@@ -3,11 +3,13 @@ Sony was the first developer to introduce a native Google Now integration into t
 
 If you are a Google employee and want this project removed, please contact me on my personal e-mail.
 
-# Demonstration
-[![Demo](https://thumbs.gfycat.com/CrazyDishonestDarklingbeetle-size_restricted.gif)](https://gfycat.com/FarawayConsiderateChinchilla)
-
 # Limitations
 It is currently only possible to use this library if the app is installed as a system application or if the Google Search app has debugging set to true. Neither of these requirements can be full-filled without read/write access to `/system`.
+
+**Please be aware that this code was originally written by Google and distributed to Sony under an unknown license. The code is likely not licensed for use by anyone but Sony and it is therefore not recommended that you use this library other than for experimental purposes.**
+
+# Demonstration
+[![Demo](https://thumbs.gfycat.com/CrazyDishonestDarklingbeetle-size_restricted.gif)](https://gfycat.com/FarawayConsiderateChinchilla)
 
 # Usage
 Please see the included example for example usage. You must install the example application as a system application by moving the built apk to `/system/app/`.
@@ -28,6 +30,3 @@ apktool d home.apk
 
 ### 3) Find the source
 The source files are located in `smali/com/google/android/libraries/launcherclient/`.
-
-# License
-See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
